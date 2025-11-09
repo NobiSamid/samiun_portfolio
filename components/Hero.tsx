@@ -17,15 +17,14 @@ const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-       <div className="relative flex h-[50rem] w-full items-center justify-center bg-white dark:bg-emerald-950 absolute top-0 left-0">
-      <div
+       <div className="relative flex h-[50rem] w-full items-center justify-center bg-transparent absolute top-0 left-0">
+      {/* <div
         className={cn(
           "absolute inset-0",
-          "[background-size:20px_20px]",
-          "[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]",
+          "[background-size:50px_50px]",
+          "[background-image:radial-gradient(#d4d4d4_1px,transparent_100px)]",
           "dark:[background-image:radial-gradient(#e1f5ed_1px,transparent_1px)]",
-        )}
-      />
+        )} /> */}
       <div className=" flex justify-center relative my-20 z-10">
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
           <TextGenerateEffect
@@ -41,9 +40,9 @@ const Hero = () => {
         </div>
       </div>
       {/* Radial gradient for the container to give a faded look */}
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-emerald-950"></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] bg-transparent"></div>
     </div>
-              <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
+          <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
             Dynamic web Magic with Next.js
           </h2>
     </div>

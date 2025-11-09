@@ -60,6 +60,7 @@
   --animate-fourth: moveHorizontal 40s ease infinite;
   --animate-fifth: moveInCircle 20s ease infinite;
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+   --animate-aurora: aurora 60s linear infinite;
 }
 
 /* 🧩 Keyframes */
@@ -92,6 +93,18 @@
   }
 }
 
+@keyframes aurora {
+  from {
+    background-position:
+      50% 50%,
+      50% 50%;
+  }
+  to {
+    background-position:
+      350% 50%,
+      350% 50%;
+  }
+}
 @keyframes shimmer {
   from {
     background-position: 0 0;
