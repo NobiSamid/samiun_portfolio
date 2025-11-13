@@ -14,16 +14,16 @@ export const AuroraBackground = ({
   ...props
 }: AuroraBackgroundProps) => {
   return (
-    <main>
+    <main className="w-full">
       <div
         className={cn(
-          "transition-bg relative flex h-[100vh] w-screen max-w-full flex-col items-center justify-center text-slate-950 bg-transparent",
+          "transition-bg relative flex h-[100vh] !w-full max-w-full flex-col items-center justify-center bg-transparent",
           className,
         )}
         {...props}
       >
         <div
-          className="absolute inset-0 overflow-hidden"
+          className="absolute inset-0 overflow-hidden w-full"
           style={
             {
               "--aurora":
